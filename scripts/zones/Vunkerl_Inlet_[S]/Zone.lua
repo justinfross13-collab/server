@@ -31,11 +31,11 @@ zoneObject.onGameHour = function(zone)
 
     if npc ~= nil then
         if VanadielHour() == 16 then
-            npc:setStatus(xi.status.DISAPPEAR)
+            npc:setStatus(xi.status.NORMAL)
         end
 
         if VanadielHour() == 6 then
-            npc:setStatus(xi.status.NORMAL)
+            npc:setStatus(xi.status.DISAPPEAR)
         end
     end
 end
